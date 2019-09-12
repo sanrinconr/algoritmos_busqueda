@@ -1,4 +1,4 @@
-# Ejercio actua: hacer residuos, radix o mergesort:
+# Ejercicio actual: hacer residuos, radix o mergesort:
 
 https://docs.google.com/spreadsheets/d/1FjP47UzVNTM6QV7LXqyxF4vYDgxc1jtqhtriGJ6Pxnc/edit?usp=sharing
 
