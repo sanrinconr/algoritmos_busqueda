@@ -3,8 +3,7 @@
 using namespace std;
 
 // A utility function to get maximum value in arr[]
-int getMax(int arr[], int n)
-{
+int getMax(int arr[], int n){
   int mx = arr[0];
   for (int i = 1; i < n; i++)
   if (arr[i] > mx)
@@ -14,8 +13,7 @@ int getMax(int arr[], int n)
 
 // A function to do counting sort of arr[] according to
 // the digit represented by exp.
-void countSort(int arr[], int n, int exp)
-{
+void countSort(int arr[], int n, int exp){
   int output[n]; // output array
   int i, count[10] = {0};
 
@@ -29,8 +27,7 @@ void countSort(int arr[], int n, int exp)
   count[i] += count[i - 1];
 
   // Build the output array
-  for (i = n - 1; i >= 0; i--)
-  {
+  for (i = n - 1; i >= 0; i--){
     output[count[ (arr[i]/exp)%10 ] - 1] = arr[i];
     count[ (arr[i]/exp)%10 ]--;
   }
@@ -43,8 +40,7 @@ void countSort(int arr[], int n, int exp)
 
 // The main function to that sorts arr[] of size n using
 // Radix Sort
-void radixsort(int arr[], int n)
-{
+void radixsort(int arr[], int n){
   // Find the maximum number to know number of digits
   int m = getMax(arr, n);
 
@@ -56,8 +52,7 @@ void radixsort(int arr[], int n)
 }
 
 // A utility function to print an array
-void print(int arr[], int n)
-{
+void print(int arr[], int n){
   for (int i = 0; i < n; i++)
   cout << arr[i] << " ";
 }
@@ -71,8 +66,7 @@ void llenarArreglo(int a[], int n){
   }
 }
 // Driver program to test above functions
-int main()
-{
+int main(){
   int n=10;
   int arr[n];
   llenarArreglo(arr,n);
