@@ -61,6 +61,7 @@ void imprimirArreglo(char a[] , int n){
       std::cout << "\n" ;
 
 }
+//LLENA EL ARREGLO TAL QUE Z.....AZ.....A
 void llenarArreglo(char a[], int n){
   char letra = 'Z';
 
